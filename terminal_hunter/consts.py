@@ -26,7 +26,8 @@ GOBLIN_LOOT_TABLE = [
 
 PROMPT = f"{GREEN}{BOLD}Options:\n{RESET}"
 PROMPT += f"{GRAY}`d`: display inventory.\n"
-PROMPT += f"`l`: loot goblin."
-PROMPT += f"`c`: clean screan {RESET}"
+PROMPT += f"`l`: loot goblin.\n"
+PROMPT += f"`c`: clean screan.\n"
+PROMPT += f"`q`: quit game. {RESET}"
 
 IN_ARROW = f"{GREEN}>>>{RESET} "
