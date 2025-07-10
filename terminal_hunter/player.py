@@ -36,6 +36,19 @@ class Player:
 
     def drink_potion(self):
         """A function to restore the players health."""
+        if 'potion' in self.inventory:
+            if self.health < 10:
+                self.inventory['potion'] -= 1
+                self.health += 2
+                print(f'{MAGENTA}Health restored!{RESET}')
+                print(self.health * "\u2764\ufe0f")
+            else:
+                print(f'{MAGENTA}Your health is already full.{RESET}')
+        else:
+            print(f'{RED}You are out of potions!{RESET}')
+
+    def trade_items(self):
+        pass
 
     def death(self):
         """The player dies."""
