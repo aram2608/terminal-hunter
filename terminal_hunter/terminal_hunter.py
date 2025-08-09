@@ -24,6 +24,7 @@ class Terminal_Hunter:
             self.traveling_merchant()
 
     def traveling_merchant(self):
+        """Spawn parameters for traveling merchant."""
         items = choice(TRAVELING_MERCHANT_ITEMS)
         print(f'{BOLD}{GREEN}Items for sale:{RESET}')
         for item, count in items.items():
